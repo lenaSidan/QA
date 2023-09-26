@@ -1,5 +1,6 @@
 package com.ait.demoqa.tests.bookStore;
 
+import com.ait.demoqa.data.UserData;
 import com.ait.demoqa.pages.HomePage;
 import com.ait.demoqa.pages.bookStore.LoginPage;
 

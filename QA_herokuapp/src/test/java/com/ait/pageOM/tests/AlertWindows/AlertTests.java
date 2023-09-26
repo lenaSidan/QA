@@ -25,10 +25,6 @@ public class AlertTests extends TestBase {
                 .assertAcceptAlert("Cancel");
     }
 
-
-
-
-    
     @Test
     public void sendTextToAlertTest() {
         new AlertsPage(driver).sendTextToAlert("Guten Tag!")

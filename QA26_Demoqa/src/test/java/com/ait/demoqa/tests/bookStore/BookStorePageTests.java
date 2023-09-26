@@ -1,6 +1,7 @@
 package com.ait.demoqa.tests.bookStore;
 
 import com.ait.demoqa.data.BookData;
+import com.ait.demoqa.data.UserData;
 import com.ait.demoqa.pages.*;
 import com.ait.demoqa.pages.bookStore.BookStorePage;
 import com.ait.demoqa.pages.bookStore.LoginPage;

@@ -73,4 +73,30 @@ public class HomePage extends BasePage{
         return new JSExecutor(driver);
     }
 
+
+    @FindBy(xpath = "//a[contains(text(),'Nested Frames')]")
+    WebElement frame;
+
+    public IframesPage navigateToFramesPage() {
+        click(frame);
+        return new IframesPage(driver);
+    }
+
+    @FindBy(xpath = "//a[contains(text(),'iFrame')]")
+    WebElement iframeLink;
+
+    public HomePage navigateToIframePage() {
+        click(iframeLink);
+        return this;
+    }
+
+    @FindBy(xpath = "//a[contains(text(),'Frames')]")
+    WebElement mainFrameLink;
+
+    public HomePage navigateToMainFramesPage() {
+        click(mainFrameLink);
+        return this;
+    }
+
+
 }
