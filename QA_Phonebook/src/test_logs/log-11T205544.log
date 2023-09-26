@@ -1,0 +1,23 @@
+1914 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+6493 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [Contact{name='Le', phone='1234567898'}]
+14756 [main] INFO  com.ait.phonebook.TestBase -- PASSED: addNewContactPositiveFromDataProviderWithCSVTestTest
+14756 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+14756 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+14759 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [Contact{name='Manuel', phone='1234567898'}]
+41131 [main] INFO  com.ait.phonebook.TestBase -- PASSED: addNewContactPositiveFromDataProviderWithCSVTestTest
+41131 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+41131 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+41133 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [Contact{name='Manuel-Le', phone='1234567898'}]
+67054 [main] INFO  com.ait.phonebook.TestBase -- PASSED: addNewContactPositiveFromDataProviderWithCSVTestTest
+67054 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+67054 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+67055 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [Contact{name='ManuelLiiii', phone='1234567898'}]
+92967 [main] INFO  com.ait.phonebook.TestBase -- PASSED: addNewContactPositiveFromDataProviderWithCSVTestTest
+92967 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+92967 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+92968 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [Contact{name='ManuelLiiiioooo', phone='1234567898'}]
+118927 [main] INFO  com.ait.phonebook.TestBase -- PASSED: addNewContactPositiveFromDataProviderWithCSVTestTest
+118927 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+118927 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************

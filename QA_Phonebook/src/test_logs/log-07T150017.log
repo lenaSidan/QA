@@ -1,0 +1,7 @@
+467  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+2709 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveTest
+5356 [main] INFO  com.ait.phonebook.TestBase -- PASSED: addNewContactPositiveTest
+5356 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+5356 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************

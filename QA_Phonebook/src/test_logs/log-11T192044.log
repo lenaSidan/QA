@@ -1,0 +1,23 @@
+2251 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+6891 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [com.ait.phonebook.models.Contact@466cf502]
+11938 [main] ERROR com.ait.phonebook.TestBase -- FAILED: addNewContactPositiveFromDataProviderWithCSVTestTestScreenshot: C:\QA\QA_Phonebook\screenshots\screen1255.png
+11938 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+11938 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+11941 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [com.ait.phonebook.models.Contact@4e2c95ee]
+38038 [main] ERROR com.ait.phonebook.TestBase -- FAILED: addNewContactPositiveFromDataProviderWithCSVTestTestScreenshot: C:\QA\QA_Phonebook\screenshots\screen1281.png
+38039 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+38039 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+38042 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [com.ait.phonebook.models.Contact@35ff8fc9]
+63953 [main] ERROR com.ait.phonebook.TestBase -- FAILED: addNewContactPositiveFromDataProviderWithCSVTestTestScreenshot: C:\QA\QA_Phonebook\screenshots\screen1307.png
+63953 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+63954 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+63957 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [com.ait.phonebook.models.Contact@59c33386]
+89783 [main] ERROR com.ait.phonebook.TestBase -- FAILED: addNewContactPositiveFromDataProviderWithCSVTestTestScreenshot: C:\QA\QA_Phonebook\screenshots\screen1333.png
+89784 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+89784 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+89787 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveFromDataProviderWithCSVTestTest with data: [com.ait.phonebook.models.Contact@6b2e46af]
+114884 [main] ERROR com.ait.phonebook.TestBase -- FAILED: addNewContactPositiveFromDataProviderWithCSVTestTestScreenshot: C:\QA\QA_Phonebook\screenshots\screen1358.png
+114884 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+114884 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************

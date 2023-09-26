@@ -1,0 +1,19 @@
+2167 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\QA\QA_Phonebook\src\test\resources\regr.xml
+
+6615 [main] INFO  com.ait.phonebook.TestBase -- Start test isHomeComponentPresentTest
+6786 [main] INFO  com.ait.phonebook.TestBase -- PASSED: isHomeComponentPresentTest
+6786 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+6787 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+6802 [main] INFO  com.ait.phonebook.TestBase -- Start test loginPositiveTest
+9013 [main] INFO  com.ait.phonebook.TestBase -- PASSED: loginPositiveTest
+9014 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+9014 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+9016 [main] INFO  com.ait.phonebook.TestBase -- Start test addNewContactPositiveTest
+34428 [main] INFO  com.ait.phonebook.TestBase -- PASSED: addNewContactPositiveTest
+34428 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+34428 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
+34430 [main] INFO  com.ait.phonebook.TestBase -- Start test removeContactPositiveTest
+60406 [main] INFO  com.ait.phonebook.TestBase -- PASSED: removeContactPositiveTest
+60406 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+60406 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************

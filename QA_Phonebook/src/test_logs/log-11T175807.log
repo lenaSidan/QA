@@ -1,0 +1,7 @@
+912  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+3535 [main] INFO  com.ait.phonebook.TestBase -- Start test loginPositiveTest
+4875 [main] INFO  com.ait.phonebook.TestBase -- PASSED: loginPositiveTest
+4876 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+4876 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************

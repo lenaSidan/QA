@@ -1,0 +1,7 @@
+1741 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+5594 [main] INFO  com.ait.phonebook.TestBase -- Start test loginPositiveTestWithScreenCast with data: []
+29532 [main] INFO  com.ait.phonebook.TestBase -- PASSED: loginPositiveTestWithScreenCast
+29533 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+29533 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************

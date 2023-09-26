@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.phonebook.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-06T17:57:22" hostname="SIDAN" time="1.889">
+  <properties/>
+  <testcase name="loginPositiveTest" classname="com.ait.phonebook.LoginTests" time="1.889"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

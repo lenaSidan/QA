@@ -1,0 +1,5 @@
+1420 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+4696 [main] INFO  com.ait.phonebook.TestBase -- Start test
+7441 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
