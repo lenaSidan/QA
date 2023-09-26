@@ -1,0 +1,20 @@
+248  [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml"
+470  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+3088 [main] INFO  demoWS.TestBase -- Start test createExistedUserNegativeFromDataProviderWithCSVTest with data: [Contact: firstName='Leo', lastName='Weiss', email='leo@web.de']
+4913 [main] INFO  demoWS.TestBase -- PASSED: createExistedUserNegativeFromDataProviderWithCSVTest
+4913 [main] INFO  demoWS.TestBase -- Stop test
+4915 [main] INFO  demoWS.TestBase -- **************************************************************
+4917 [main] INFO  demoWS.TestBase -- Start test createExistedUserNegativeFromDataProviderWithCSVTest with data: [Contact: firstName='Nikolay', lastName='Brock', email='leo@web.de']
+6387 [main] INFO  demoWS.TestBase -- PASSED: createExistedUserNegativeFromDataProviderWithCSVTest
+6387 [main] INFO  demoWS.TestBase -- Stop test
+6387 [main] INFO  demoWS.TestBase -- **************************************************************
+6388 [main] INFO  demoWS.TestBase -- Start test createExistedUserNegativeFromDataProviderWithCSVTest with data: [Contact: firstName='AnnaBella', lastName='Bodt', email='leo@web.de']
+7978 [main] INFO  demoWS.TestBase -- PASSED: createExistedUserNegativeFromDataProviderWithCSVTest
+7978 [main] INFO  demoWS.TestBase -- Stop test
+7978 [main] INFO  demoWS.TestBase -- **************************************************************
+7980 [main] INFO  demoWS.TestBase -- Start test createExistedUserNegativeFromDataProviderWithCSVTest with data: [Contact: firstName='Luiza-Sofi', lastName='Kollen', email='leo@web.de']
+9663 [main] INFO  demoWS.TestBase -- PASSED: createExistedUserNegativeFromDataProviderWithCSVTest
+9663 [main] INFO  demoWS.TestBase -- Stop test
+9663 [main] INFO  demoWS.TestBase -- **************************************************************

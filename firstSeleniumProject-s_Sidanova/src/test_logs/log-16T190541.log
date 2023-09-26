@@ -1,0 +1,8 @@
+246  [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml"
+467  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+3199 [main] INFO  demoWS.TestBase -- Start test loginNegativeWithoutPasswordTest with data: []
+24197 [main] ERROR demoWS.TestBase -- FAILED: loginNegativeWithoutPasswordTestScreenshot: C:\QA\firstSeleniumProject-s_Sidanova\screenshots\screen365.png
+24197 [main] INFO  demoWS.TestBase -- Stop test
+24197 [main] INFO  demoWS.TestBase -- **************************************************************

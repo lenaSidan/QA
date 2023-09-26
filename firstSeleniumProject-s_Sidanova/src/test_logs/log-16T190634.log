@@ -1,0 +1,8 @@
+251  [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml"
+469  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+2854 [main] INFO  demoWS.TestBase -- Start test loginPositiveTest with data: []
+24606 [main] ERROR demoWS.TestBase -- FAILED: loginPositiveTestScreenshot: C:\QA\firstSeleniumProject-s_Sidanova\screenshots\screen419.png
+24607 [main] INFO  demoWS.TestBase -- Stop test
+24608 [main] INFO  demoWS.TestBase -- **************************************************************

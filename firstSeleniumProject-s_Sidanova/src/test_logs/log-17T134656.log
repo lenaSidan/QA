@@ -1,0 +1,8 @@
+958  [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml"
+1639 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+6835 [main] INFO  demoWS.TestBase -- Start test loginNegativeWithoutPasswordTest with data: []
+8295 [main] INFO  demoWS.TestBase -- PASSED: loginNegativeWithoutPasswordTest
+8296 [main] INFO  demoWS.TestBase -- Stop test
+8296 [main] INFO  demoWS.TestBase -- **************************************************************

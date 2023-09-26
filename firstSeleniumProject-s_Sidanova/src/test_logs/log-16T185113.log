@@ -1,0 +1,8 @@
+362  [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml"
+629  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+3331 [main] INFO  demoWS.TestBase -- Start test loginPositiveTestWithScreenCast with data: []
+11146 [main] INFO  demoWS.TestBase -- PASSED: loginPositiveTestWithScreenCast
+11146 [main] INFO  demoWS.TestBase -- Stop test
+11146 [main] INFO  demoWS.TestBase -- **************************************************************

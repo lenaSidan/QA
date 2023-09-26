@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression" verbose="1" >
+    <test name="Regression" >
+        <classes>
+            <class name="demoWS.HomePageTests"/>
+            <class name="demoWS.LoginTest" >
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                    <exclude name=".*ScreenCast.*"/>
+                </methods>
+            </class>
+            <class name="demoWS.CreateNewUserTests">
+                <methods>
+                    <exclude name=".*DataProvider.*"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>

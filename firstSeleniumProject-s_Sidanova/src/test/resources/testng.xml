@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoky" verbose="1" >
+    <test name="Smoky" >
+        <classes>
+            <class name="demoWS.LoginTest" >
+                <methods>
+                   <exclude name=".*Negative.*"/>
+                   <exclude name=".*ScreenCast.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
