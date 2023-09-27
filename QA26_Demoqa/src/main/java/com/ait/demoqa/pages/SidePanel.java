@@ -4,11 +4,14 @@ import com.ait.demoqa.pages.alertWindows.IframesPage;
 import com.ait.demoqa.pages.bookStore.LoginPage;
 import com.ait.demoqa.pages.bookStore.ProfilePage;
 import com.ait.demoqa.pages.elements.ButtonsPage;
+import com.ait.demoqa.pages.form.PracticeFormPage;
 import com.ait.demoqa.pages.widgets.AutoCompletePage;
+import com.ait.demoqa.pages.widgets.SelectMenuPage;
 import com.ait.demoqa.pages.widgets.SliderPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class SidePanel extends BasePage{
 
@@ -77,5 +80,21 @@ public class SidePanel extends BasePage{
     public SliderPage selectSlider() {
         clickWithJSExecutor(slider, 0, 500);
         return new SliderPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Select Menu']")
+    WebElement selectMenu;
+
+    public SelectMenuPage selectSelectMenu() {
+        clickWithJSExecutor(selectMenu,0,600);
+        return new SelectMenuPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Practice Form']")
+    WebElement practiceForm;
+
+    public PracticeFormPage selectPracticeForm() {
+        clickWithJSExecutor(practiceForm, 0, 200);
+        return new PracticeFormPage(driver);
     }
 }

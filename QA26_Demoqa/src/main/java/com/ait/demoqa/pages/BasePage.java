@@ -15,10 +15,12 @@ import java.time.Duration;
 public abstract class BasePage {
 
     public WebDriver driver;
+    JavascriptExecutor js;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
+        js = (JavascriptExecutor) driver;
     }
 
     public void click(WebElement element) {
@@ -36,7 +38,7 @@ public abstract class BasePage {
 
     //метод, которым можно пользоваться в крайнем случае(всплывающая реклама мешает прохождению теста)
     public void clickWithJSExecutor(WebElement element, int x, int y) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+
         js.executeScript("window.scrollBy(" + x + "," + y + ")");
         element.click();
     }
@@ -83,6 +85,20 @@ public abstract class BasePage {
             System.out.println(linkUrl + " - " + e.getMessage() + " is a broken link");
         }
     }
+
+    public void hideIframes() {
+        hideAd();
+        hideFooter();
+    }
+
+    public void hideFooter() {
+        js.executeScript("document.querySelector('footer').style.display='none';");
+    }
+
+    public void hideAd() {
+        js.executeScript("document.getElementById('adplus-anchor').style.display='none';");
+    }
+
 
 
 

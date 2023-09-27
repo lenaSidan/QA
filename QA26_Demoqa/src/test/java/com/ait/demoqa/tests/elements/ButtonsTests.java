@@ -4,7 +4,6 @@ import com.ait.demoqa.pages.HomePage;
 import com.ait.demoqa.pages.SidePanel;
 import com.ait.demoqa.pages.elements.ButtonsPage;
 import com.ait.demoqa.tests.TestBase;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

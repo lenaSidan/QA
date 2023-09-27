@@ -17,7 +17,7 @@ public class SliderPage extends BasePage{
 
 
     public SliderPage moveSliderHorizontalDirection() {
-        pause(2000);
+        pause(1000);
         new Actions(driver).dragAndDropBy(slider,65, 0).perform();
         return this;
     }
@@ -26,13 +26,10 @@ public class SliderPage extends BasePage{
     WebElement range;
 
     public SliderPage assertToMoveSlider(String number) {
-        Assert.assertEquals(getValueAttribute(range, "value"), number);
+        Assert.assertTrue(isTextPresent(range, number));
         return this;
     }
-    private String getValueAttribute(WebElement element, String value) {
 
-        return element.getAttribute(value);
-    }
 
 
 }
