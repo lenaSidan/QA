@@ -99,4 +99,11 @@ public class HomePage extends BasePage{
     }
 
 
+    @FindBy(xpath = "//a[contains(text(),'Horizontal Slider')]")
+    WebElement horizontalSlider;
+
+    public HomePage navigateToSliderPage() {
+        click(horizontalSlider);
+        return this;
+    }
 }
