@@ -1,5 +1,6 @@
-package com.ait.pageOM.pages;
+package com.ait.pageOM.pages.alertWindows;
 
+import com.ait.pageOM.pages.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -17,23 +18,40 @@ public class IframesPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(tagName = "iframe")
-    List<WebElement> iframes;
+    @FindBy(tagName = "frame")
+    List<WebElement> frames;
 
     public IframesPage returnListOfIframes() {
-        // print numbers of iframes using tag name
-        System.out.println("The total number of frames on the page: " + iframes.size());
+        frames = driver.findElements(By.tagName("frame"));
+        int totalFrames = frames.size();
+
+        // Для каждого фрейма на основной странице проверяем на наличие вложенных фреймов
+        for (WebElement frame : frames) {
+            driver.switchTo().frame(frame);
+            totalFrames += driver.findElements(By.tagName("frame")).size();
+            driver.switchTo().defaultContent();
+        }
+
+        System.out.println("The total number of frames on the page: " + totalFrames);
 
         // by executing js
         JavascriptExecutor js = (JavascriptExecutor) driver;
         Integer numberIframes = Integer.parseInt(js.executeScript("return window.length;").toString());
-        System.out.println("The total number of frames on the page " + numberIframes);
+        System.out.println("Total number of top-level frames on the current page (via JS): " + numberIframes);
         return this;
     }
 
     public IframesPage switchToFrameByIndex(int index) {
-        driver.switchTo().frame(index);
-        System.out.println("Invalid index. There are " + iframes.size() + " iframes available.");
+        frames = driver.findElements(By.tagName("frame"));
+        System.out.println("Total number of top-level frames on the current page: " + frames.size());
+        if (index >= 0 && index < frames.size()) {
+            WebElement frameToSwitch = frames.get(index);
+            String frameName = frameToSwitch.getAttribute("name");
+            System.out.println("Switching to frame with index: " + index + " and name: " + frameName);
+            driver.switchTo().frame(index);
+        } else {
+            System.out.println("Invalid index. There are " + frames.size() + " iframes available.");
+        }
         return this;
     }
 
@@ -58,28 +76,21 @@ public class IframesPage extends BasePage {
         driver.switchTo().frame(topFrame);
 
         driver.switchTo().frame(leftFrame);
-        System.out.println("Inside frame-left");
-        System.out.println("Frame-left is " + body.getText());
-
+        System.out.println("Frame-left is: " + body.getText());
         driver.switchTo().parentFrame();
 
         driver.switchTo().frame(middleFrame);
         System.out.println("Inside frame-middle: " + driver.findElement(By.id("content")).getText());
-        System.out.println("Frame-middle is " + body.getText());
         driver.switchTo().parentFrame();
 
         driver.switchTo().frame(rightFrame);
-        System.out.println("Inside frame-right");
+        System.out.println("Inside frame-right: " + body.getText());
         driver.switchTo().parentFrame();
 
         driver.switchTo().defaultContent();
 
         driver.switchTo().frame(bottomFrame);
         System.out.println("Inside frame-bottom: " + driver.findElement(By.tagName("body")).getText());
-
-        System.out.println("The total number of iframes in the child iframe: " + iframes.size());
-        System.out.println("The total number of frames on the page " + iframes.size());
-        System.out.println("The total number of iframes in the parent iframe: " + iframes.size());
 
         driver.switchTo().defaultContent();
 

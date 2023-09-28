@@ -15,7 +15,6 @@ public class SliderPage extends BasePage{
     @FindBy(xpath = "//input[@type='range']")
     WebElement slider;
 
-
     public SliderPage moveSliderHorizontalDirection() {
         pause(1000);
         new Actions(driver).dragAndDropBy(slider,65, 0).perform();

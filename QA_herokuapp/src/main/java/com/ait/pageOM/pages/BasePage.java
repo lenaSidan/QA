@@ -1,8 +1,6 @@
 package com.ait.pageOM.pages;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,6 +12,7 @@ import java.time.Duration;
 public abstract class BasePage {
 
     public WebDriver driver;
+    JavascriptExecutor js;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -82,6 +81,25 @@ public abstract class BasePage {
         }
     }
 
+    public boolean isElementPresent(By locator) {
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+    public void hideIframes() {
+        hideAd();
+        hideFooter();
+    }
+    public void hideFooter() {
+        js.executeScript("document.querySelector('footer').style.display='none';");
+    }
+
+    public void hideAd() {
+        js.executeScript("document.getElementById('adplus-anchor').style.display='none';");
+    }
 
 
 }

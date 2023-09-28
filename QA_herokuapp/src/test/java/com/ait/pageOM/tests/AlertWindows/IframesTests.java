@@ -1,7 +1,7 @@
 package com.ait.pageOM.tests.AlertWindows;
 
 import com.ait.pageOM.pages.HomePage;
-import com.ait.pageOM.pages.IframesPage;
+import com.ait.pageOM.pages.alertWindows.IframesPage;
 import com.ait.pageOM.tests.TestBase;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -23,7 +23,7 @@ public class IframesTests extends TestBase {
 
     @Test
     public void switchToFrameByIndexTest() {
-        int indexToSwitch = 0;
+        int indexToSwitch = 1;
         new HomePage(driver)
                 .navigateToFramesPage()
                 .switchToFrameByIndex(indexToSwitch);
