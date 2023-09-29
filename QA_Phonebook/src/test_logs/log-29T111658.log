@@ -1,0 +1,7 @@
+482  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\lenas\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+2476 [main] INFO  com.ait.phonebook.TestBase -- Start test removeContactPositiveTest with data: []
+29262 [main] INFO  com.ait.phonebook.TestBase -- PASSED: removeContactPositiveTest
+29262 [main] INFO  com.ait.phonebook.TestBase -- Stop Test
+29262 [main] INFO  com.ait.phonebook.TestBase -- *********************************************************
