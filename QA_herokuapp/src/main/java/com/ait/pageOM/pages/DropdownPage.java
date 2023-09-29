@@ -21,8 +21,11 @@ public class DropdownPage extends BasePage{
         Select dropdown = new Select(dropdownElement);
         dropdown.selectByVisibleText(optionText);
 
-        String selectedOption = dropdown.getFirstSelectedOption().getText();
-        Assert.assertEquals(selectedOption, optionText, "The selected option does not match the expected option.");
         return this;
+    }
+
+    public String getSelectedOption() {
+        Select dropdown = new Select(dropdownElement);
+        return dropdown.getFirstSelectedOption().getText();
     }
 }

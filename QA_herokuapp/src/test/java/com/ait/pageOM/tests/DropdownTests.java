@@ -2,6 +2,7 @@ package com.ait.pageOM.tests;
 
 import com.ait.pageOM.pages.DropdownPage;
 import com.ait.pageOM.pages.HomePage;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,8 +16,11 @@ public class DropdownTests extends TestBase{
 
     @Test
     public void DropdownPageTest() {
-        new DropdownPage(driver).selectDropdown(DROPDOWN);
+        DropdownPage dropdownPage = new DropdownPage(driver).selectDropdown(DROPDOWN);
+        String selectedOption = dropdownPage.getSelectedOption();
+        Assert.assertEquals(selectedOption, DROPDOWN, "The selected option does not match the expected option.");
     }
+
 
 }
 
