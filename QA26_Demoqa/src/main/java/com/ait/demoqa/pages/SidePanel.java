@@ -4,10 +4,10 @@ import com.ait.demoqa.pages.alertWindows.IframesPage;
 import com.ait.demoqa.pages.bookStore.LoginPage;
 import com.ait.demoqa.pages.bookStore.ProfilePage;
 import com.ait.demoqa.pages.elements.ButtonsPage;
+import com.ait.demoqa.pages.elements.TextBoxPage;
 import com.ait.demoqa.pages.form.PracticeFormPage;
-import com.ait.demoqa.pages.widgets.AutoCompletePage;
-import com.ait.demoqa.pages.widgets.SelectMenuPage;
-import com.ait.demoqa.pages.widgets.SliderPage;
+import com.ait.demoqa.pages.interactions.DroppablePage;
+import com.ait.demoqa.pages.widgets.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -96,5 +96,40 @@ public class SidePanel extends BasePage{
     public PracticeFormPage selectPracticeForm() {
         clickWithJSExecutor(practiceForm, 0, 200);
         return new PracticeFormPage(driver);
+    }
+
+
+    @FindBy(xpath = "//span[.='Menu']")
+    WebElement menu;
+
+    public MenuPage getMenu() {
+        clickWithJSExecutor(menu,0,400);
+        return  new MenuPage(driver);
+    }
+
+
+    @FindBy(xpath = "//span[.='Tool Tips']")
+    WebElement toolTips;
+
+    public ToolTipsPage selectToolTips() {
+        clickWithJSExecutor(toolTips,0,600);
+        return new ToolTipsPage(driver);
+    }
+
+
+    @FindBy(xpath = "//span[.='Droppable']")
+    WebElement droppable;
+
+    public DroppablePage selectDroppable() {
+        clickWithJSExecutor(droppable,0,600);
+        return new DroppablePage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Text Box']")
+    WebElement textBox;
+
+    public TextBoxPage selectTextBox() {
+        click(textBox);
+        return new TextBoxPage(driver);
     }
 }

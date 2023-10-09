@@ -2,10 +2,14 @@ package com.ait.demoqa.pages.form;
 
 import com.ait.demoqa.pages.BasePage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+
 
 public class PracticeFormPage extends BasePage {
 
@@ -57,7 +61,7 @@ public class PracticeFormPage extends BasePage {
     @FindBy(id = "dateOfBirthInput")
     WebElement dateOfBirthInput;
 
-    public PracticeFormPage selectData(String dateOfBirth) {
+    public PracticeFormPage enterDate(String dateOfBirth) {
         click(dateOfBirthInput);
         String os = System.getProperty("os.name");
         if (os.startsWith("Mac")) {
@@ -143,6 +147,43 @@ public class PracticeFormPage extends BasePage {
         click(cityContainer);
         cityInput.sendKeys(city);
         cityInput.sendKeys(Keys.ENTER);
+        return this;
+    }
+
+
+    @FindBy(id = "submit")
+    WebElement submit;
+
+    public PracticeFormPage submitForm() {
+        clickWithRectangle(submit, 2, 4);
+        return this;
+    }
+
+
+    @FindBy(id = "example-modal-sizes-title-lg")
+    WebElement modalTitle;
+
+    public PracticeFormPage assertModalTitle(String title) {
+        Assert.assertTrue(shouldHaveText(modalTitle,title,10));
+        return this;
+    }
+
+    @FindBy(css = ".react-datepicker__month-select")
+    WebElement monthArea;
+
+    @FindBy(css = ".react-datepicker__year-select")
+    WebElement yearArea;
+
+    public PracticeFormPage selectDate(String month, String year, String day) {
+        click(dateOfBirthInput);
+
+        new Select(monthArea).selectByVisibleText(month);
+
+        new Select(yearArea).selectByVisibleText(year);
+
+        driver.findElement(By.
+                        xpath("//div[@class='react-datepicker__week']//div[.='" + day + "']"))
+                .click();
         return this;
     }
 }

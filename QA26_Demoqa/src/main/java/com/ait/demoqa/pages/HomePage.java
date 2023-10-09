@@ -110,4 +110,13 @@ public class HomePage extends BasePage{
         clickWithJSExecutor(forms, 0, 300);
         return new SidePanel(driver);
     }
+
+
+    @FindBy(xpath = "//h5[.='Interactions']")
+    WebElement interactions;
+
+    public SidePanel getInteractions() {
+        clickWithJSExecutor(interactions,0,300);
+        return new SidePanel(driver);
+    }
 }
