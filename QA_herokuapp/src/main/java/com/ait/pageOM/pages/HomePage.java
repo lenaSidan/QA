@@ -139,4 +139,22 @@ public class HomePage extends BasePage {
         click(dropdown);
         return this;
     }
+
+
+    @FindBy(xpath = "//a[text()='Drag and Drop']")
+    WebElement dragAndDrop;
+
+    public HomePage getDragAndDrop() {
+        click(dragAndDrop);
+        return this;
+    }
+
+
+    @FindBy(xpath = "//a[text()='Hovers']")
+    WebElement hovers;
+
+    public HomePage getHovers() {
+        click(hovers);
+        return this;
+    }
 }
