@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class TextBoxPage extends BasePage {
     public TextBoxPage(WebDriver driver) {
@@ -38,6 +39,12 @@ public class TextBoxPage extends BasePage {
         actions.sendKeys("v");
         actions.keyUp(Keys.CONTROL);
         actions.perform();
+        return this;
+    }
+
+
+    public TextBoxPage assertTextEquals() {
+        Assert.assertEquals(currentAddress.getText(), permanentAddress.getText());
         return this;
     }
 }

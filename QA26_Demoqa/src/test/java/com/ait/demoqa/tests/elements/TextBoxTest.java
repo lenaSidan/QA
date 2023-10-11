@@ -16,6 +16,7 @@ public class TextBoxTest extends TestBase {
 
     @Test
     public void keyBoardEventTest() {
-        new TextBoxPage(driver).keyBoardEvent();
+
+        new TextBoxPage(driver).keyBoardEvent().assertTextEquals();
     }
 }
