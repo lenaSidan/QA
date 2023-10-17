@@ -34,10 +34,10 @@ public class TestBase {
     public void init() {
         System.err.close();
         //driver = new ChromeDriver();
-        if (browser.equalsIgnoreCase(Browser.FIREFOX.browserName())) {
+        if (browser.equalsIgnoreCase(Browser.CHROME.browserName())) {
             driver = new ChromeDriver();
             logger.info("All Tests run in Chrome Browser");
-        } else if (browser.equalsIgnoreCase(Browser.CHROME.browserName())) {
+        } else if (browser.equalsIgnoreCase(Browser.FIREFOX.browserName())) {
             driver = new FirefoxDriver();
             logger.info("All Tests run in Firefox Browser");
         }
